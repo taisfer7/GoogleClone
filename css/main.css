@@ -6,29 +6,29 @@ body{
     font-size: 13px;
     /* Fuente de texto */
     font-family: Arial, Helvetica, sans-serif;
-}
-
-/* NAVEGACIÓN */
-/*  */
-/*  */
-
-header{
+  }
+  
+  /* NAVEGACIÓN */
+  /*  */
+  /*  */
+  
+  header{
     width: 100%;
     height:55px;
-}
-
-/* Para editar elementos dentro de elementos se pone espacio, para que se modifiquen juntos */
-
-header nav{
+  }
+  
+  /* Para editar elementos dentro de elementos se pone espacio, para que se modifiquen juntos */
+  
+  header nav{
     display: flex;
     /* Mover mi nav hacia la derecha */
     justify-content: flex-end;
-}
-
-header nav .nav-right-section{
+  }
+  
+  header nav .nav-right-section{
     /* Eliminar viñetas */
     list-style: none;
-    width: 250px;
+    width: 230px;
     /* Hacemos el elemento flexible */
     display: flex;
     /* Centramos */
@@ -36,81 +36,96 @@ header nav .nav-right-section{
     /* Centrado en sentido vertical */
     align-items: center;
     height: auto;
-}
-
-/* Se puede nombrar sin el header */
-header nav .nav-right-section a{
+  }
+  
+  /* Se puede nombrar sin el header */
+  header nav .nav-right-section a{
     /* Quitar delineado */
     text-decoration: none;
     color: rgba(0,0,0,.87) ;
-}
-
-/* Las class se llaman con punto */
-nav .nav-right-section .menu{
+  }
+  
+  header nav .nav-right-section a:hover{
+    text-decoration: underline;
+  }
+  
+  /* Las class se llaman con punto */
+  nav .nav-right-section .menu{
     background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
-    width: 22px;
-    height: 22px;
-    /* Tamaño de imagen de fondo -contenida en el espacio que tiene disponible */
-    background-size: contain;
-    /* Es para que no se repita una imagen 
-    background-repeat: no repeat; */
-    box-shadow: 0px 0px 2px 7px rgba(0, 0, 0, .1);
-}
-
-nav .nav-right-section img{
+    width: 17px;
+    height: 17px;
+    margin-left: 7px;
+    /*Tamaño de imagen de fondo -contenida en el espacio que tiene disponible */
+    background-size: contain;  
+    /* Es para que no se repita una imagen */
+    background-repeat: no repeat;  
+    /* box-shadow: 0px 0px 2px 7px rgba(0, 0, 0, .1); */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out; */
+    /* border-radius: 50%; */
+    padding: 3px; 
+  }  
+  
+  .nav-right-section .menu:hover{
+    box-shadow: 0px 0px 2px 7px rgba(0, 0, 0, .1); 
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 50%;
+  }
+  
+  nav .nav-right-section img{
     /* Margin right (margen derecho y hacer espacio a la foto */
     margin-right: 20px;
     max-width: 100%;
     border-radius: 100%;
-}
-
-/* MAIN */
-/*  */
-/*  */
-
-main{
-    margin-top: 170px;
+  }
+  
+  /* MAIN */
+  /*  */
+  /*  */
+  
+  main{
+    margin-top: 10px;
     /* EL backgroudn color sirve para ubicarse 
     background-color: aqua;*/
     text-align: center;
-}
-
-main .main-logo{
+  }
+  
+  main .main-logo{
     width: 600px;
     /* PROPIEDAD: VALOR 1 VALOR 2 */
     /* PROPIEDAD: VERTICAL HORIZONTAL */
     margin: 0 auto;
-    margin-bottom: 35px;
-}
-
-main .main-logo img{
+    margin-bottom: 25px;
+  }
+  
+  main .main-logo img{
     /* Editar tamaño de la imagen */
     height: 92px;
-}
-
-/* INPUT SECTION */
-main .main-input{
-    width: 530px;
+  }
+  
+  /* INPUT SECTION */
+  main .main-input{
+    width: 585px;
     margin: 0 auto;
     /* Agregar margen inferior */
-}
-
-main .main-input-container{
-    width: 500px;
+  }
+  
+  main .main-input-container{
+    width: 584px;
     /* BORDE DE COLOR: ANCHURA DE LÍNEA, ESTILO, COLOR (hay varios tipos de estilo */
     border: 1px solid #dfe1e5;
     border-radius: 35px;
-}
-
-main .main-input input{
-    height: 45px;
+  }
+  
+  main .main-input input{
+    height: 44px;
     border: none;
     /* QOUTLINE (quita los bordes de la cajita del input */
     outline: none;
-    width: 390px;
-}
-
-main .main-input .search-icon{
+    width: 460px;
+  }
+  
+  main .main-input .search-icon{
     background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
     background-size: contain;
     background-position: center;
@@ -120,9 +135,9 @@ main .main-input .search-icon{
     height: 25px;
     margin-right:10px;
     margin-left: 10px;
-}
-
-main .main-input .micro-icon{
+  }
+  
+  main .main-input .micro-icon{
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
     width: 25px;
     height: 25px;
@@ -132,9 +147,9 @@ main .main-input .micro-icon{
     background-repeat: no-repeat;
     margin-right: 2px;
     margin-left: 5px;
-}
-
-main .main-input .cam-icon{
+  }
+  
+  main .main-input .cam-icon{
     background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
     width: 25px;
     height: 25px;
@@ -143,26 +158,26 @@ main .main-input .cam-icon{
     padding-left:6%;
     background-repeat: no-repeat;
     margin-right: 10px;
-}
-
-main .main-input-container:hover{
+  }
+  
+  main .main-input-container:hover{
     box-shadow: 0 1px 6px #a7afbd;
     border-color: #dfe1e500;
-}
-
-/* SECCIÓN MAIN BUTTONS */
-main .main-buttons {
+  }
+  
+  /* SECCIÓN MAIN BUTTONS */
+  main .main-buttons {
     width: 550px;
     /* Vertical (0) horizontal (auto) */
     margin: 0 auto;
-}
-
-main .main-buttons div {
+  }
+  
+  main .main-buttons div {
     /* Alinear elementos en la misma línea */
     display: inline;
-}
-
-main .main-buttons button{
+  }
+  
+  main .main-buttons button{
     /* Separación entre buscador y botones */
     margin-top: 30px;
     /* Eliminar borde negro, se puede poner 0 o none */
@@ -175,46 +190,114 @@ main .main-buttons button{
     border-radius: 5px;
     padding: 0 15px;
     margin-right: 10px;
-}
-
-main .main-buttons button:hover{
+  }
+  
+  main .main-buttons button:hover{
     color: #202124;
     /* borde oscuro al pasar mouse */
     border: 1px solid #dadce0;
     box-shadow: 0 1px 1px 1px rgba(0, 0, 0, .1);
-}
-
-
-/* FOOTER */
-/*  */
-/*  */
-/*  */
-footer{
+  }
+  
+  
+  /* FOOTER */
+  /*  */
+  /*  */
+  /*  */
+  footer{
     width: 100%;
+    padding: 10px 0;
     position: fixed;
-    left: 0;
+    border-top: 1px solid #e4e4e4;;
     bottom: 0;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    box-sizing: border-box;
     background-color: #f2f2f2;
-}
-
-
-footer .footer-left{
-    display: flex;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  footer .country{
+    /* text-align:left; */
+    margin-left: 27px;
+    margin-top: 0;
+    font-size: 15px;
+    padding: 8px 0;
+  }
+  
+  footer .country a{
+    text-decoration: none;
     color: #202124;
-    padding: 15px;
-    list-style: none;
-    justify-content:space-between;
-}
-
-
-footer .footer-right{
+  }
+  
+  .separator{
+    width: 100%;
+    /* height: 1px; */
+    background-color: #f2f2f2;
+    margin-bottom: 18px;
+  }
+  
+  footer .separator hr{
+    background-color:#e4e4e4; 
+    border: none;
+    height: 1px;
+  }
+  
+  .footer-content{
     display: flex;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #202124;
-    padding: 15px;
-    list-style: none;
     justify-content: space-between;
-}
+    align-items: center;
+    padding: 0 10px 6px;
+  }
+  
+  footer ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0 20px;
+    display: flex;
+  }
+  
+  footer ul li{
+    margin: 0 14px;
+  }
+  
+  footer ul li a{
+    text-decoration: none;
+    color:  #202124;
+    font-size: 14px;
+  }
+  
+  footer ul li a:hover{
+    text-decoration: underline;
+  }
+  
+  .footer-left{
+    float: left;
+    margin-left: 10px;
+  }
+  
+  
+  .footer-right{
+    float: right;
+  }
+  
+  @media screen and (max-width: 768px){ 
+    .footer-content{
+        align-items: center;
+        flex-direction: column;
+        float: none;
+        text-align: center;
+        display: flex;
+        height: 95px;
+    }
+  
+    footer ul {
+        /* flex-direction:column;
+        align-items:center; */
+        justify-content: space-evenly;
+    }
+  
+    footer ul li {
+        margin: 5px 5px;
+    }
+  }
